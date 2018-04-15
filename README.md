@@ -17,7 +17,7 @@
 - djangorestframework==3.8.2
 - djangorestframework-jwt==1.11.0
 
-## 启动
+## 初始化
 
 ```
 git clone http://gogs.antio.top/wuyue/rest_backend.git
@@ -33,4 +33,6 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-浏览器访问： http://127.0.0.1:8080/api-docs/
+## 启动
+
+浏览器访问： http://127.0.0.1:8000/api-docs/
