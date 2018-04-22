@@ -1,4 +1,4 @@
-# rest_backends
+# rest_backend
 
 ## 后台api接口模板
 
@@ -20,7 +20,7 @@
 ## 初始化
 
 ```
-git clone http://gogs.antio.top/wuyue/rest_backend.git
+git clone http://https://github.com/wuyue92tree/rest_backend.git
 
 cd rest_backend
 
