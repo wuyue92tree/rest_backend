@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-22 12:12+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: rest_backend/libs/accounts/admin.py:12
+msgid "Personal info"
+msgstr ""
+
+#: rest_backend/libs/accounts/admin.py:16
+msgid "Permissions"
+msgstr ""
+
+#: rest_backend/libs/accounts/admin.py:18
+msgid "Important dates"
+msgstr ""
+
+#: rest_backend/libs/accounts/models.py:10
+msgid "unknown"
+msgstr "未知"
+
+#: rest_backend/libs/accounts/models.py:11
+msgid "male"
+msgstr "男"
+
+#: rest_backend/libs/accounts/models.py:12
+msgid "female"
+msgstr "女"
+
+#: rest_backend/libs/accounts/models.py:14
+msgid "nickname"
+msgstr "昵称"
+
+#: rest_backend/libs/accounts/models.py:15
+msgid "phone"
+msgstr "手机号"
+
+#: rest_backend/libs/accounts/models.py:20
+msgid "head_avatar"
+msgstr "头像"
+
+#: rest_backend/libs/accounts/models.py:21
+#, fuzzy
+#| msgid "header_oauth_avatar"
+msgid "head_oauth_avatar"
+msgstr "oauth头像"
+
+#: rest_backend/libs/accounts/models.py:22
+msgid "description"
+msgstr "个人简介"
+
+#: rest_backend/libs/accounts/models.py:23
+msgid "gender"
+msgstr "性别"
+
+#: rest_backend/libs/accounts/models.py:24
+msgid "birthday"
+msgstr "生日"
+
+#: rest_backend/libs/accounts/models.py:25
+msgid "activate_key"
+msgstr "激活码"

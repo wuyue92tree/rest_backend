@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # rest文档swagger
     'rest_framework_swagger',
     'rest_backend.libs.backend',
+    'rest_backend.libs.accounts',
 ]
 
 MIDDLEWARE = [
@@ -54,10 +55,19 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 激活locale
+    'django.middleware.locale.LocaleMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'rest_backend.urls'
+
+# 自定义用户注册模块
+AUTH_USER_MODEL = 'accounts.User'
+
+# session过期时间设置
+SESSION_COOKIE_AGE = 60*30
+
 
 TEMPLATES = [
     {
@@ -108,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'zh-hans'
+LANGUAGE_CODE = 'zh_hans'
 
 TIME_ZONE = 'Asia/Shanghai'
 
