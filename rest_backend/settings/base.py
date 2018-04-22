@@ -97,6 +97,14 @@ DATABASES = {
     }
 }
 
+# 添加路由
+DATABASE_ROUTERS = ['rest_backend.utils.database_router.DatabaseAppsRouter']
+DATABASE_APPS_MAPPING = {
+    # example:
+    # 'app_name':'database_name',
+    'accounts': 'default',
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
