@@ -16,6 +16,7 @@
 - django-rest-swagger==2.1.2
 - djangorestframework==3.8.2
 - djangorestframework-jwt==1.11.0
+- Pillow==5.1.0
 
 ## 初始化
 
