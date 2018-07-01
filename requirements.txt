@@ -4,4 +4,6 @@ django-debug-toolbar==1.9.1
 django-rest-swagger==2.1.2
 djangorestframework==3.8.2
 djangorestframework-jwt==1.11.0
+django-filter==1.1.0
 Pillow==5.1.0
+git+https://github.com/darklow/django-suit/tarball/v2.git

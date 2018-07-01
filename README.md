@@ -36,4 +36,8 @@ python manage.py runserver
 
 ## 启动
 
-浏览器访问： http://127.0.0.1:8000/api-docs/
+浏览器访问： http://127.0.0.1:8000/api/docs/
+
+## FAQ
+
+[说明文档](http://wuyue92tree.antio.top/opensource/rest-backend.html#FAQ)

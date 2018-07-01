@@ -19,9 +19,12 @@ schema_view = get_swagger_view(title='Project API')
 
 router = routers.DefaultRouter()
 
+app_name = 'backend'
 
 urlpatterns = [
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('auth/login/', obtain_jwt_token, name='token-login'),
-    path('api-docs/', schema_view),
+    path('docs/', schema_view),
+
+    # add api here
+
 ]
