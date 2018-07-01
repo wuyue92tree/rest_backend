@@ -20,8 +20,9 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', RedirectView.as_view(url='/api-docs')),
-    path('', include('rest_backend.libs.backend.urls'))
+    path('', RedirectView.as_view(url='/admin/')),
+    path('', include('rest_framework.urls', namespace='rest_framework')),
+    path('api/', include('rest_backend.libs.backend.urls', namespace='api'))
 ]
 
 if settings.DEBUG:

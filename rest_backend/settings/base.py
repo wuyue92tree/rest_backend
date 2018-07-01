@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_backend.utils.suit.SuitConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -66,13 +67,12 @@ ROOT_URLCONF = 'rest_backend.urls'
 AUTH_USER_MODEL = 'accounts.User'
 
 # session过期时间设置
-SESSION_COOKIE_AGE = 60*30
-
+SESSION_COOKIE_AGE = 60 * 30
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
