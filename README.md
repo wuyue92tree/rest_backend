@@ -40,4 +40,4 @@ python manage.py runserver
 
 ## FAQ
 
-[说明文档](http://wuyue92tree.antio.top/opensource/rest-backend.html#FAQ)
+[说明文档](http://wuyue92tree.antio.top/opensource/rest_backend.html#FAQ)
