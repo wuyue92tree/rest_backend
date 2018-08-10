@@ -21,7 +21,7 @@
 ## 初始化
 
 ```
-git clone http://https://github.com/wuyue92tree/rest_backend.git
+git clone https://github.com/wuyue92tree/rest_backend.git
 
 cd rest_backend
 
@@ -42,7 +42,7 @@ python manage.py runserver
 ## docker部署上线
 
 ```
-git clone http://https://github.com/wuyue92tree/rest_backend.git
+git clone https://github.com/wuyue92tree/rest_backend.git
 
 cd rest_backend
 
