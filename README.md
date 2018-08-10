@@ -6,11 +6,11 @@
 
 - python3.6+
 
-- django2.0.4
+- django2.1
 
 ## 其他依赖
 
-- Django==2.0.4
+- Django==2.1
 - django-cors-headers==2.2.0
 - django-debug-toolbar==1.9.1
 - django-rest-swagger==2.1.2
@@ -37,6 +37,18 @@ python manage.py runserver
 ## 启动
 
 浏览器访问： http://127.0.0.1:8000/api/docs/
+
+
+## docker部署上线
+
+```
+git clone http://https://github.com/wuyue92tree/rest_backend.git
+
+cd rest_backend
+
+docker-compose up
+```
+
 
 ## FAQ
 
