@@ -1,0 +1,18 @@
+version: '3'
+services:
+  rest_backend:
+    build: .
+    volumes:
+      - ./rest_backend:/data/src/rest_backend
+      - ./templates:/data/src/templates
+      - ./_product/uwsgi.ini:/data/src/uwsgi.ini
+      - ./static:/data/src/static
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./_product/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./static:/data/src/static
+    ports:
+      - '8088:80'
+    links:
+      - rest_backend
