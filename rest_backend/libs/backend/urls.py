@@ -26,5 +26,5 @@ urlpatterns = [
     path('docs/', schema_view),
 
     # add api here
-
+    path('account/', include('rest_backend.libs.accounts.urls')),
 ]

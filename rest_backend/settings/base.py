@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # rest接口框架
     'rest_framework',
+    'rest_framework.authtoken',
     # rest文档swagger
     'rest_framework_swagger',
     'rest_backend.libs.backend',
@@ -51,11 +52,16 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # token参数认证
+    'rest_backend.utils.middleware.TokenAuthMiddleware',
+    # 跨域
+    'corsheaders.middleware.CorsMiddleware',
     # 激活locale
     'django.middleware.locale.LocaleMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
@@ -67,7 +73,7 @@ ROOT_URLCONF = 'rest_backend.urls'
 AUTH_USER_MODEL = 'accounts.User'
 
 # session过期时间设置
-SESSION_COOKIE_AGE = 60 * 30
+SESSION_COOKIE_AGE = 3600 * 24
 
 TEMPLATES = [
     {
@@ -146,13 +152,18 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend',
+    ],
+    'DEFAULT_PAGINATION_CLASS':
+        'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10
 }
 
