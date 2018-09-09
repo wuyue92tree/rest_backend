@@ -23,6 +23,7 @@ class SuitConfig(DjangoSuitConfig):
         ParentItem('认证和授权', children=[
             ChildItem(model='accounts.user'),
             ChildItem(model='auth.group'),
+            ChildItem(model='authtoken.token'),
         ], icon='fa fa-users'),
         ParentItem('设置', children=[
             # ChildItem('修改密码', url='admin:password_change'),
