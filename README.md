@@ -6,11 +6,11 @@
 
 - python3.6+
 
-- django2.1
+- django2.1.2
 
 ## 其他依赖
 
-- Django==2.1
+- Django==2.1.2
 - django-cors-headers==2.2.0
 - django-debug-toolbar==1.9.1
 - django-rest-swagger==2.1.2
