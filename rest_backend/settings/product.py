@@ -10,7 +10,10 @@
 这一行开始写关于本文件的说明与解释
 """
 
-
 from .base import *
 
 DEBUG = False
+
+# celery
+# BROKER_URL = 'redis://127.0.0.1:6379/1'
+# CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379'
