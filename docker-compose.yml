@@ -6,7 +6,14 @@ services:
       - ./rest_backend:/data/src/rest_backend
       - ./templates:/data/src/templates
       - ./_product/uwsgi.ini:/data/src/uwsgi.ini
+      - ./_product/superviosr:/etc/supervisor
       - ./static:/data/src/static
+      - ./media:/data/src/media
+      - ./db:/data/src/db
+      - ./logs:/data/logs
+    ports:
+    - '9001:9001'
+    - '5555:5555'
   nginx:
     image: nginx:latest
     volumes:
