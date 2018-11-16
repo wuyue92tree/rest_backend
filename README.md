@@ -2,21 +2,18 @@
 
 ## 后台api接口模板
 
+### admin管理页
+![admin](./media/admin.png)
+
+
+### swagger-ui页
+![swagger](./media/swagger.png)
+
 ## 基础依赖
 
 - python3.6+
 
 - django2.1.2
-
-## 其他依赖
-
-- Django==2.1.2
-- django-cors-headers==2.2.0
-- django-debug-toolbar==1.9.1
-- django-rest-swagger==2.1.2
-- djangorestframework==3.8.2
-- djangorestframework-jwt==1.11.0
-- Pillow==5.1.0
 
 ## 初始化
 
