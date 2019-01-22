@@ -13,7 +13,7 @@
 
 - python3.6+
 
-- django2.1.2
+- django2.1.5
 
 ## 初始化
 
