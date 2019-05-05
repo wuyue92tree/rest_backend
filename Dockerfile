@@ -5,7 +5,8 @@ COPY . /data/src
 COPY ./deploy.ini /etc/supervisor/conf.d/
 COPY ./_product/nginx.conf /usr/local/nginx/conf/nginx.conf
 
-RUN pip install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+RUN pip install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com \
+    && pip install https://github.com/darklow/django-suit/tarball/v2
 
 RUN python manage.py collectstatic --noinput
 
