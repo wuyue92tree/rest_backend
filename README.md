@@ -13,7 +13,7 @@
 
 - python3.6+
 
-- django2.1.5
+- django2.2.1
 
 ## 初始化
 
@@ -43,7 +43,9 @@ git clone https://github.com/wuyue92tree/rest_backend.git
 
 cd rest_backend
 
-docker-compose up
+docker build -t rest_backend .
+
+docker run -tid -v <your-log-path>:/data/src/log -p 80:80 rest_backend
 ```
 
 
