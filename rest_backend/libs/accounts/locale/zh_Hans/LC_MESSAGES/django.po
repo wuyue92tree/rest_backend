@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-22 12:12+0800\n"
+"POT-Creation-Date: 2019-07-07 13:20+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,60 +18,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: rest_backend/libs/accounts/admin.py:12
+#: admin.py:12
 msgid "Personal info"
 msgstr ""
 
-#: rest_backend/libs/accounts/admin.py:16
+#: admin.py:16
 msgid "Permissions"
 msgstr ""
 
-#: rest_backend/libs/accounts/admin.py:18
+#: admin.py:18
 msgid "Important dates"
 msgstr ""
 
-#: rest_backend/libs/accounts/models.py:10
+#: apps.py:12
+msgid "User Center"
+msgstr "用户中心"
+
+#: models.py:10
 msgid "unknown"
 msgstr "未知"
 
-#: rest_backend/libs/accounts/models.py:11
+#: models.py:11
 msgid "male"
 msgstr "男"
 
-#: rest_backend/libs/accounts/models.py:12
+#: models.py:12
 msgid "female"
 msgstr "女"
 
-#: rest_backend/libs/accounts/models.py:14
+#: models.py:14
 msgid "nickname"
 msgstr "昵称"
 
-#: rest_backend/libs/accounts/models.py:15
+#: models.py:15
 msgid "phone"
 msgstr "手机号"
 
-#: rest_backend/libs/accounts/models.py:20
+#: models.py:20
 msgid "head_avatar"
 msgstr "头像"
 
-#: rest_backend/libs/accounts/models.py:21
+#: models.py:21
 #, fuzzy
 #| msgid "header_oauth_avatar"
 msgid "head_oauth_avatar"
 msgstr "oauth头像"
 
-#: rest_backend/libs/accounts/models.py:22
+#: models.py:22
 msgid "description"
 msgstr "个人简介"
 
-#: rest_backend/libs/accounts/models.py:23
+#: models.py:23
 msgid "gender"
 msgstr "性别"
 
-#: rest_backend/libs/accounts/models.py:24
+#: models.py:24
 msgid "birthday"
 msgstr "生日"
 
-#: rest_backend/libs/accounts/models.py:25
+#: models.py:25
 msgid "activate_key"
 msgstr "激活码"
