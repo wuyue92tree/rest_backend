@@ -3,17 +3,17 @@
 ## 后台api接口模板
 
 ### admin管理页
-![admin](./media/admin.png)
+![admin](./images/admin.jpg)
 
 
 ### swagger-ui页
-![swagger](./media/swagger.png)
+![swagger](./images/swagger.png)
 
 ## 基础依赖
 
 - python3.6+
 
-- django2.2.1
+- django2.2
 
 ## 初始化
 
@@ -33,7 +33,9 @@ python manage.py runserver
 
 ## 启动
 
-浏览器访问： http://127.0.0.1:8000/api/docs/
+后台地址：http://127.0.0.1:8000/
+
+API地址： http://127.0.0.1:8000/api/docs/
 
 
 ## docker部署上线
@@ -48,7 +50,10 @@ docker build -t rest_backend .
 docker run -tid -v <your-log-path>:/data/src/log -p 80:80 rest_backend
 ```
 
+## 捐赠
 
-## FAQ
-
-[说明文档](http://wuyue92tree.antio.top/opensource/rest_backend.html#FAQ)
+<p align="left">
+  <a href="https://github.com/wuyue92tree/rest_backend">
+    <img alt="title" src="./images/alipay.png" width="200px">
+  </a>
+</p>

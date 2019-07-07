@@ -30,13 +30,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'rest_backend.utils.suit.SuitConfig',
+    'adminlteui',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # treebeard
+    'treebeard',
     # debug工具
     'debug_toolbar',
     # 跨域
@@ -134,6 +136,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
+
+LANGUAGES = (
+    ('zh-hans', '简体中文'),
+    ('en', 'English')
+)
+
 
 LANGUAGE_CODE = 'zh-hans'
 
@@ -233,3 +241,7 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'third_party_app_trans/django_celery_beat/locale'),
+)
