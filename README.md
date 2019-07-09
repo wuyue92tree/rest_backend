@@ -50,6 +50,10 @@ docker build -t rest_backend .
 docker run -tid -v <your-log-path>:/data/src/log -p 80:80 rest_backend
 ```
 
+## demo
+
+[http://django-demo.antio.top/](http://django-demo.antio.top/)
+
 ## 捐赠
 
 <p align="left">
