@@ -1,0 +1,45 @@
+kind: pipeline
+name: default
+
+steps:
+- name: push_image
+  image: plugins/docker
+  settings:
+    registry: registry.home-stack.in
+    repo: registry.home-stack.in/rest-backend
+    tags:
+    - ${DRONE_TAG}
+    - latest
+    insecure: true
+  when:
+    event:
+    - tag
+    - deployment
+- name: deploy
+  image: quay.io/honestbee/drone-kubernetes
+  settings:
+    namespace: demo
+    deployment: rest-backend
+    repo: registry.home-stack.in/rest-backend
+    container: rest-backend
+    tag: ${DRONE_TAG=latest}
+    kubernetes_server:
+      from_secret: kubernetes_server
+    kubernetes_token:
+      from_secret: kubernetes_token
+  when:
+    event:
+    - tag
+    - deployment
+- name: notify
+  image: wuyue/drone-dingding
+  environment:
+    DING_DING_WEBHOOK_URL:
+      from_secret: DING_DING_WEBHOOK_URL
+  when:
+    event:
+    - tag
+    - deployment
+    status:
+    - success
+    - failure
